@@ -14,4 +14,48 @@ h1 {
 .flex-container1 {
   display: flex;
   background-color: lightsalmon;
+  flex-direction: column;
+}
+
+.button {
+  background-color: chocolate;
+  border: 0cqmax;
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 12px;
+  margin: 25px 260px;
+  cursor: pointer;
+  height: 0px;
+  width: 100px;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 2px 2px rgb(151, 108, 10);
+}
+button:hover {
+  back
+}
+
+p {
+  text-align: center;
+  color: rgba(60, 12, 12, 0.811);
+  font-size: large;
+}
+
+ul#list {
+  text-align: left;
+  list-style: none;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-horizontal {
+  display: flex;
+  margin: 0auto;
+  border: 0cqmax;
+  color: black;
 }
