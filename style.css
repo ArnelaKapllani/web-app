@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: blue;
+  font-size: 3rem;
+  text-align: center;
+  background-color: bisque;
+  padding: 8px;
+  margin-top: 0%;
+}
+
+.flex-container1 {
+  display: flex;
+  background-color: lightsalmon;
+}
