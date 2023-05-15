@@ -17,16 +17,16 @@ h1 {
   flex-direction: column;
 }
 
-.button {
+.sunflower-answer {
   background-color: chocolate;
   border: 0cqmax;
   color: white;
-  padding: 30px 10px;
+  padding: 30px 30px;
   text-align: center;
   text-decoration: none;
   display: flex;
   font-size: 12px;
-  margin: 25px 260px;
+  margin: auto;
   cursor: pointer;
   height: 0px;
   width: 100px;
@@ -34,9 +34,6 @@ h1 {
   border-radius: 10px;
   border: none;
   box-shadow: 0px 0px 2px 2px rgb(151, 108, 10);
-}
-button:hover {
-  back
 }
 
 p {
