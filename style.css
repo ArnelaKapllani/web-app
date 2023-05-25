@@ -1,58 +1,84 @@
-* {
+*,
+*::before
+*::after {
   box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0 45px 0;
+  font-family: system-ui;
+  height: 100%;
 }
 
-h1 {
+header {
   color: blue;
-  font-size: 3rem;
+  font-size: x-large;
   text-align: center;
   background-color: bisque;
-  padding: 8px;
-  margin-top: 0%;
-}
-
-.flex-container1 {
-  display: flex;
-  background-color: lightsalmon;
-  flex-direction: column;
-}
-
-.sunflower-answer {
-  background-color: chocolate;
-  border: 0cqmax;
-  color: white;
-  padding: 30px 30px;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  font-size: 12px;
+  padding: 10px;
   margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+.question-card {
+  margin: 20px 10px;
+  border: 5px solid #252629;
+  padding: 3% 10%;
+  scroll-margin-top: 100px;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.question-card__button {
+  padding: 10px 40px;
+  background: #fff;
+  border: 0;
+  outline: none;
   cursor: pointer;
-  height: 0px;
-  width: 100px;
-  justify-content: center;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 0px 0px 2px 2px rgb(151, 108, 10);
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 30px;
 }
 
-p {
-  text-align: center;
-  color: rgba(60, 12, 12, 0.811);
-  font-size: large;
-}
-
-ul#list {
-  text-align: left;
-  list-style: none;
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.list-horizontal {
-  display: flex;
-  margin: 0auto;
-  border: 0cqmax;
+.question-card__bookmark {
+  border: 1px solid: #ddd;
+  padding: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0,5);
+  width: 50px;
+  position: absolute;
+  top: -20px;
+  right: 0px;
   color: black;
+
 }
+
+/*.footer-nav {
+  color: white;
+  text-align: center;
+  background-color: bisque;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+} */
+
+
+.footer-nav__img{
+  width: 100%;
+  height: 200px;
+  margin-top: auto;
+
+
+
+
+
+  
+
+} 
+
