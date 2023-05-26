@@ -5,8 +5,8 @@
     <meta name="description" content="This is my first Web App" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../web-app/style.css" type="text/css" />
-    <script src="../web-app/javascript/javascript.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <script src="./javascript/javascript.js" defer></script>
   </head>
   <body>
     <header>
@@ -14,10 +14,7 @@
     </header>
     <main>
       <section class="question-card">
-        <img
-          class="question-card__bookmark"
-          src="../web-app/assets/bookmark-icon.svg"
-        />
+        <img class="question-card__bookmark" src="./assets/bookmark-icon.svg" />
         <h2 class="question-card__question">
           What are the colors of the sunflower?
         </h2>
@@ -29,6 +26,10 @@
           <li><a href="flexbox">#flexbox</a></li>
           <li><a href="css">#css</a></li>
         </ul>
+        <p class="popup__answer--hidden">
+          Sunflower colors range from cream to gold, yellow, orange, red,
+          mahogany and chocolate brown.
+        </p>
         <!-- <div class="popup popup--hidden">
           <img
             class="question-card__bookmark"
@@ -45,10 +46,7 @@
         </div> -->
       </section>
       <section class="question-card">
-        <img
-          class="question-card__bookmark"
-          src="../web-app/assets/bookmark-icon.svg"
-        />
+        <img class="question-card__bookmark" src="./assets/bookmark-icon.svg" />
         <h2 class="question-card__question">
           What are the colors of the rainbow?
         </h2>
@@ -77,14 +75,14 @@
     </main>
     <footer>
       <nav class="footer-nav">
-        <a href="home" class="footer-nav__img">
-          <img src="../web-app/assets/home.svg" alt="Homepage"
+        <a href="./index.html" name="Home" class="footer-nav__img">
+          <img src="./assets/home.svg" alt="Homepage"
         /></a>
-        <a href="bookmark" class="footer-nav__img">
-          <img src="../web-app/assets/bookmark-icon.svg" alt="Bookmark"
+        <a href="./bookmarks.html" name="Bookmark" class="footer-nav__img">
+          <img src="./assets/bookmark-icon.svg" alt="Bookmark"
         /></a>
-        <a href="profile" class="footer-nav__img"
-          ><img src="../web-app/assets/profile.png" alt="Profile"
+        <a href="./profil.html" name="Profile" class="footer-nav__img"
+          ><img src="./assets/profile.png" alt="Profile"
         /></a>
       </nav>
     </footer>
