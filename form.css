@@ -31,3 +31,9 @@ header {
 .form__label {
   display: block;
 }
+
+.form__character-count {
+  font-size: inherit;
+  color: #666;
+  font-size: 13px;
+}

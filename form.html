@@ -11,27 +11,36 @@
     <link rel="stylesheet" href="./form.css" type="text/css" />
     <script src="./javascript/javascript.js" defer></script>
   </head>
+
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
+
     <form class="form">
       <label class="form__label" for="your-question">Your question:</label>
       <textarea
         maxlength="150"
-        data-js="yourQuestion"
+        data-js="formField"
         name="yourQuestion"
         id="your-question"
       ></textarea>
+      <small class="form__character-count">
+        <span data-js="amountOfCharactersLeft"></span> characters left</small>
+
       <label class="form__label" for="your-answer">Your Answer:</label>
       <textarea
         maxlength="150"
-        data-js="yourAnswer"
+        data-js="formField"
         name="yourAnswer"
         id="your-answer"
       ></textarea>
-      <label class="form__label" for="tag">Tag:</label>
+      <small class="form__character-count">
+        <span data-js="amountOfCharactersLeft"></span> characters left</small>
+      
+        <label class="form__label" for="tag">Tag:</label>
       <input type="text" name="tag" data-js="tag" id="tag"></input>
+      
       <button>Submit</button>
     </form>
   </body>
