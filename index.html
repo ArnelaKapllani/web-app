@@ -10,13 +10,15 @@
   </head>
 
   <body>
-    <header>
-      <h1>Quiz App</h1>
+    <header class="header">
+      <h1 class="header__title">Quiz App</h1>
     </header>
+
     <main>
       <section class="question-card">
         <button class="bookmark-button" type="button" data-js="bookmark-button">
           <svg
+            class="bookmark__icon"
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             viewBox="0 -960 960 960"
@@ -35,15 +37,15 @@
           type="button"
           data-js="button-show-answer"
         ></button>
+        <p class="hidden" data-js="hidden-answer">
+          Sunflower colors range from cream to gold, yellow, orange, red,
+          mahogany and chocolate brown.
+        </p>
         <ul class="question-card__tags">
           <li class="tags-link"><a href="html">#html</a></li>
           <li class="tags-link"><a href="flexbox">#flexbox</a></li>
           <li class="tags-link"><a href="css">#css</a></li>
         </ul>
-        <p class="hidden" data-js="hidden-answer">
-          Sunflower colors range from cream to gold, yellow, orange, red,
-          mahogany and chocolate brown.
-        </p>
         <!-- <div class="hidden">
           <img
             class="question-card__bookmark"
@@ -63,6 +65,7 @@
       <section class="question-card">
         <button class="bookmark-button" type="button" data-js="bookmark-button">
           <svg
+            class="bookmark__icon"
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             viewBox="0 -960 960 960"
@@ -118,6 +121,7 @@
         /></a>
         <a href="./bookmarks.html" name="Bookmark">
           <svg
+            class="footer-nav__img"
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             viewBox="0 -960 960 960"

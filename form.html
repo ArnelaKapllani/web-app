@@ -9,7 +9,8 @@
     />
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./form.css" type="text/css" />
-    <script src="./javascript/javascript.js" defer></script>
+    <link real="stylesheet" href="./css/style.css" type="text/css"/>
+    <script src="./form.js" defer></script>
   </head>
 
   <body>
@@ -17,11 +18,11 @@
       <h1>Quiz App</h1>
     </header>
 
-    <form class="form">
+    <form class="form" data-js="form">
       <label class="form__label" for="your-question">Your question:</label>
       <textarea
         maxlength="150"
-        data-js="formField"
+        data-js="yourQuestion"
         name="yourQuestion"
         id="your-question"
       ></textarea>
@@ -31,7 +32,7 @@
       <label class="form__label" for="your-answer">Your Answer:</label>
       <textarea
         maxlength="150"
-        data-js="formField"
+        data-js="yourAnswer"
         name="yourAnswer"
         id="your-answer"
       ></textarea>
@@ -39,7 +40,8 @@
         <span data-js="amountOfCharactersLeft"></span> characters left</small>
       
         <label class="form__label" for="tag">Tag:</label>
-      <input type="text" name="tag" data-js="tag" id="tag"></input>
+      <input type="text" name="tag" data-js="tag" id="tag">
+    </input>
       
       <button>Submit</button>
     </form>

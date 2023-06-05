@@ -1,0 +1,21 @@
+:root {
+  --primary: #f8f5f5;
+  --secondary: rgb(241, 50, 50);
+  --secondary-light: #fddcd2;
+  --color-water-10: #f3f5f9;
+  --black: #252629;
+
+  --ff-primary: sans-serif;
+  --ff-serif: serif;
+}
+
+*,
+*::before *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui;
+}
