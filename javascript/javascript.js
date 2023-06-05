@@ -1,6 +1,11 @@
+import { Bookmark } from "../Components/Bookmark/Bookmark.js";
+
 console.clear();
 
-const showAnswer = document.querySelector('[data-js="button-show-answer"]');
-showAnswer.addEventListener("click", () => {
-  showAnswer.classList.add("openpopup");
+const answerButton = document.querySelector('[data-js="button-show-answer"]');
+const answer = document.querySelector('[data-js="hidden-answer"]');
+
+answerButton.addEventListener("click", function (buttonText) {
+  buttonText.target.classList.toggle("changeButtonText");
+  answer.classList.toggle("hidden");
 });

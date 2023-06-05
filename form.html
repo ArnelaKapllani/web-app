@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form for the cards</title>
+    <meta name="description" content="Form for the cards" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./form.css" type="text/css" />
+    <link real="stylesheet" href="./css/style.css" type="text/css"/>
+    <script src="./form.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+
+    <form class="form" data-js="form">
+      <label class="form__label" for="your-question">Your question:</label>
+      <textarea
+        maxlength="150"
+        data-js="yourQuestion"
+        name="yourQuestion"
+        id="your-question"
+      ></textarea>
+      <small class="form__character-count">
+        <span data-js="amountOfCharactersLeft"></span> characters left</small>
+
+      <label class="form__label" for="your-answer">Your Answer:</label>
+      <textarea
+        maxlength="150"
+        data-js="yourAnswer"
+        name="yourAnswer"
+        id="your-answer"
+      ></textarea>
+      <small class="form__character-count">
+        <span data-js="amountOfCharactersLeft"></span> characters left</small>
+      
+        <label class="form__label" for="tag">Tag:</label>
+      <input type="text" name="tag" data-js="tag" id="tag">
+    </input>
+      
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

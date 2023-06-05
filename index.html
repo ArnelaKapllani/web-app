@@ -8,29 +8,45 @@
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
     <script src="./javascript/javascript.js" defer></script>
   </head>
+
   <body>
-    <header>
-      <h1>Quiz App</h1>
+    <header class="header">
+      <h1 class="header__title">Quiz App</h1>
     </header>
+
     <main>
       <section class="question-card">
-        <img class="question-card__bookmark" src="./assets/bookmark-icon.svg" />
+        <button class="bookmark-button" type="button" data-js="bookmark-button">
+          <svg
+            class="bookmark__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            viewBox="0 -960 960 960"
+            width="48"
+          >
+            <path
+              d="M200-120v-665q0-24 18-42t42-18h440q24 0 42 18t18 42v665L480-240 200-120Zm60-91 220-93 220 93v-574H260v574Zm0-574h440-440Z"
+            />
+          </svg>
+        </button>
         <h2 class="question-card__question">
           What are the colors of the sunflower?
         </h2>
-        <button class="question-card__button" data-js="button-show-answer">
-          Click for the answer
-        </button>
-        <ul class="question-card__tags">
-          <li><a href="html">#html</a></li>
-          <li><a href="flexbox">#flexbox</a></li>
-          <li><a href="css">#css</a></li>
-        </ul>
-        <p class="popup__answer--hidden">
+        <button
+          class="question-card__button"
+          type="button"
+          data-js="button-show-answer"
+        ></button>
+        <p class="hidden" data-js="hidden-answer">
           Sunflower colors range from cream to gold, yellow, orange, red,
           mahogany and chocolate brown.
         </p>
-        <!-- <div class="popup popup--hidden">
+        <ul class="question-card__tags">
+          <li class="tags-link"><a href="html">#html</a></li>
+          <li class="tags-link"><a href="flexbox">#flexbox</a></li>
+          <li class="tags-link"><a href="css">#css</a></li>
+        </ul>
+        <!-- <div class="hidden">
           <img
             class="question-card__bookmark"
             src="../web-app/assets/bookmark-icon.svg"
@@ -45,19 +61,38 @@
           </h2>
         </div> -->
       </section>
+
       <section class="question-card">
-        <img class="question-card__bookmark" src="./assets/bookmark-icon.svg" />
+        <button class="bookmark-button" type="button" data-js="bookmark-button">
+          <svg
+            class="bookmark__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            viewBox="0 -960 960 960"
+            width="48"
+          >
+            <path
+              d="M200-120v-665q0-24 18-42t42-18h440q24 0 42 18t18 42v665L480-240 200-120Zm60-91 220-93 220 93v-574H260v574Zm0-574h440-440Z"
+            />
+          </svg>
+        </button>
         <h2 class="question-card__question">
           What are the colors of the rainbow?
         </h2>
-        <button class="question-card__button" data-js="button-show-answer">
-          Click for the answer
-        </button>
+        <button
+          class="question-card__button"
+          type="button"
+          data-js="button-show-answer"
+        ></button>
         <ul class="question-card__tags">
-          <li><a href="html">#html</a></li>
-          <li><a href="flexbox">#flexbox</a></li>
-          <li><a href="css">#css</a></li>
+          <li class="tags-link"><a href="html">#html</a></li>
+          <li class="tags-link"><a href="flexbox">#flexbox</a></li>
+          <li class="tags-link"><a href="css">#css</a></li>
         </ul>
+        <p class="hidden" data-js="hidden-answer">
+          The colours of the rainbow are: Red, orange, yellow, green, blue,
+          indigo, violet.
+        </p>
         <!-- <div class="popup popup--hidden">
           <img
             class="question-card__bookmark"
@@ -73,16 +108,45 @@
         </div> -->
       </section>
     </main>
+
     <footer>
       <nav class="footer-nav">
-        <a href="./index.html" name="Home" class="footer-nav__img">
-          <img src="./assets/home.svg" alt="Homepage"
+        <a href="./index.html" name="Home">
+          <img
+            class="footer-nav__img"
+            src="./assets/home.svg"
+            alt="Homepage"
+            height="48"
+            width="48"
         /></a>
-        <a href="./bookmarks.html" name="Bookmark" class="footer-nav__img">
-          <img src="./assets/bookmark-icon.svg" alt="Bookmark"
+        <a href="./bookmarks.html" name="Bookmark">
+          <svg
+            class="footer-nav__img"
+            xmlns="http://www.w3.org/2000/svg"
+            height="48"
+            viewBox="0 -960 960 960"
+            width="48"
+          >
+            <path
+              d="M200-120v-665q0-24 18-42t42-18h440q24 0 42 18t18 42v665L480-240 200-120Zm60-91 220-93 220 93v-574H260v574Zm0-574h440-440Z"
+            />
+          </svg>
+        </a>
+        <a href="./form.html" name="Form"
+          ><img
+            class="footer-nav__img"
+            src="./assets/add_circle_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="Profile"
+            height="48"
+            width="48"
         /></a>
-        <a href="./profil.html" name="Profile" class="footer-nav__img"
-          ><img src="./assets/profile.png" alt="Profile"
+        <a href="./profil.html" name="Profile"
+          ><img
+            class="footer-nav__img"
+            src="./assets/profile.png"
+            alt="Profile"
+            height="48"
+            width="48"
         /></a>
       </nav>
     </footer>

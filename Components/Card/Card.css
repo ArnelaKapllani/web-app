@@ -1,0 +1,57 @@
+.question-card {
+  padding: 2rem 2rem 2rem 2rem;
+  border: 0.5px solid var(--black);
+  position: relative;
+  background-color: var(--primary);
+  text-align: center;
+  margin: 8rem 0;
+}
+
+.question-card__question {
+  margin: 0 0 2rem;
+}
+
+.question-card__button {
+  background: var(--secondary);
+  color: var(--primary);
+  border: none;
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+}
+
+.question-card__button:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.question-card__button:after {
+  content: "Show answer";
+}
+.changeButtonText:after {
+  content: "Hide answer";
+}
+
+.buttonText {
+  font-size: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.question-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+/* .tags-link {
+} */
+
+/* .color {
+  background-color: #252629;
+} */
